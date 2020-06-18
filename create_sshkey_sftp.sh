@@ -1,10 +1,12 @@
 #!/bin/bash
+# lulobank
+# squintero@lulobank.com
 
 #variables
 declare -a envs=("play" "sbx" "qa" "stg")
 
 if [ -z $1 ] || [ -z $2 ]; then
-  echo 'Usage: create_sshkey.sh <directory-or-service> <user-name>'
+  echo 'Usage: create_sshkey_sftp.sh <directory-or-service> <user-name>'
   exit 1
 fi
 
